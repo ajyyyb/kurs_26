@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
+import 'main_dev.dart' as dev;
+import 'main_prod.dart' as prod;
+
 void main() {
-  runApp(MyApp());
+  const env = String.fromEnvironment('ENV', defaultValue: 'prod');
+
+  if (env == 'dev') {
+    dev.main();
+  } else {
+    prod.main();
+  }
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

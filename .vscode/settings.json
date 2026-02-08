@@ -1,0 +1,43 @@
+{
+    // Add this line back in
+    "dart.preserveTrailingCommas": true, 
+
+    "dart.lineLength": 80,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggestSelection": "first",
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "solidity.compileUsingRemoteVersion": "v0.8.20+commit.a1b79de6",
+    "solidity.telemetry": true,
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#f797b7"
+    },
+    "editor.codeActionsOnSave": {},
+    "git.openRepositoryInParentFolders": "never",
+    "window.zoomLevel": 2,
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "git.ignoreRebaseWarning": true,
+    "[python]": {
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnSave": true
+    },
+    "editor.inlineSuggest.showToolbar": "always",
+    "redhat.telemetry.enabled": true,
+    "makefile.configureOnOpen": true,
+    "dart.showTodos": true,
+    "cursor.cpp.enablePartialAccepts": true,
+    "cursor.composer.collapsePaneInputBoxPills": true,
+    "cursor.composer.shouldAllowCustomModes": true
+}
