@@ -1,17 +1,31 @@
-# i_am_rich
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 # kurs_26
+
+A course task in Flutter: an "I am Rich" screen with a yellow background, a custom font and a diamond picture, built with two run modes (dev and prod).
+
+## Run modes
+
+The mode is chosen at start with the `ENV` value; `prod` is the default.
+
+```bash
+flutter run                        # prod
+flutter run --dart-define=ENV=dev  # dev, the app title is "Medicall (DEV)"
+```
+
+## Structure
+
+```text
+lib/
+  main.dart       chooses dev or prod by ENV, the shared home page
+  main_dev.dart   dev entry point
+  main_prod.dart  prod entry point
+assets/
+  fonts/          Sofia-Regular.ttf
+  images/         diamond.png
+```
+
+## Run it
+
+```bash
+flutter pub get
+flutter run
+```
